@@ -1,0 +1,559 @@
+/* 
+    Created on : Jan 7, 2017, 8:21:44 PM
+    Author     : Nathan
+*/
+/*GENERAL*/
+body{
+    
+}
+div{
+    float: left;
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto Slab', sans-serif;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+p{
+    font-family: 'Lora', sans-serif;
+}
+a{
+    
+}
+.body-wrap{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.site-logo{
+    height: 40px;
+    width: 40px;
+    margin: 10px auto;
+}
+
+
+.sec-content{
+    width: 70%;
+    margin-left: 15%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.sec-title{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+.info-sec{
+    height: 100vh;
+    background: url('../images/keyboard.jpg');
+    background-size: cover;
+    font-size: 15px;
+    font-family: 'Lora', sans-serif;
+    color: #fff;
+}
+.info-title{
+    font-size: 65px;
+    font-weight: bold;
+    font-family: 'Berkshire Swash', sans-serif;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.my-brief{
+    margin-top: 0px;
+    font-size: 36px;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #80cbc4;
+}
+
+
+.skill-sec{
+    background: #eeeeee;
+    border-bottom: 1px solid #e0e0e0;
+}
+.skill-item{
+    width: 30%;
+    margin: 70px 2.5% 70px 2.5%;
+}
+.skill-image{
+    height: 150px;
+}
+.skill-title{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #008c8c;
+}
+.skill-desc{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #424242;
+}
+
+
+.in-logo{
+    width: 40px;
+    height: 40px;
+    margin: -30px auto 0px auto;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: #e0e0e0;
+    clear: both;
+}
+
+
+.contact-sec{
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #008c8c;
+}
+.c-extra{
+    font-size: 20px;
+}
+.c-form{
+    max-width: 400px;
+    margin: 30px auto 70px;
+}
+
+input, textarea{
+    font-family: 'Roboto Slab', sans-serif;
+}
+.input-txt{
+    width: 350px;
+    padding: 7.5px 0px 7.5px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #80cbc4;
+    font-size: 16px;
+}
+.c-form textarea{
+    width: 342px;
+    height: 100px;
+    padding: 7.5px 10px;
+    margin-bottom: 5px;
+    border: 1px solid #80cbc4;
+    font-size: 16px;
+}
+.input-btn{
+    width: 364px;
+    font-size: 16px;
+    padding: 7.5px 0px;
+    border: 1px solid #80cbc4;
+    background: #008c8c;
+    color: #fff;
+}
+
+
+.footer{
+    min-height: 100px;
+    background: #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Lora', sans-serif;
+    color: #424242;
+}
+
+
+/*Smartphone*/
+@media screen and (min-width: 320px) and (max-width: 479px)
+{
+ .site-logo{
+    height: 40px;
+    width: 40px;
+    margin: 5px auto;
+}
+
+
+.sec-content{
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+.info-sec{
+    height: 50vh;
+    font-size: 15px;
+}
+.info-title{
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+.my-brief{
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+
+.skill-sec{
+    padding-bottom: 30px;
+}
+.skill-item{
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+}
+.skill-image{
+    height: 150px;
+}
+.skill-title{
+    font-size: 19px;
+}
+.skill-desc{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+
+.in-logo{
+    width: 40px;
+    height: 40px;
+    margin: -30px auto 0px auto;
+    padding: 5px;
+}
+
+
+.contact-sec h1{
+    font-size: 22px;
+    margin-top: 20px
+}
+.c-extra{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 14px;
+    margin-top: -0px;
+}
+.c-form{
+    width: 90%;
+    margin: 30px auto 70px;
+}
+
+input, textarea{
+    font-family: 'Roboto Slab', sans-serif;
+}
+.input-txt{
+    width: 98%;
+    padding: 7.5px 0px 7.5px 2%;
+    font-size: 14px;
+}
+.c-form textarea{
+    width: 96%;
+    height: 70px;
+    padding: 7.5px 2%;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.input-btn{
+    width: 101%;
+    font-size: 15px;
+}
+
+
+.footer{
+    min-height: 70px;
+    font-size: 12px;
+}
+}
+
+/*SmartPhone Landscape*/
+@media screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape)
+{
+ .site-logo{
+    height: 40px;
+    width: 40px;
+    margin: 5px auto;
+}
+
+
+.sec-content{
+    width: 70%;
+    margin-left: 15%;
+}
+
+
+.info-sec{
+    height: 100vh;
+    font-size: 15px;
+}
+.info-title{
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+.my-brief{
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+
+.skill-sec{
+    padding-bottom: 30px;
+}
+.skill-item{
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+}
+.skill-image{
+    height: 150px;
+}
+.skill-title{
+    font-size: 20px;
+}
+.skill-desc{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+
+.in-logo{
+    width: 40px;
+    height: 40px;
+    margin: -30px auto 0px auto;
+    padding: 5px;
+}
+
+
+.contact-sec h1{
+    font-size: 26px;
+    margin-top: 20px
+}
+.c-extra{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 14px;
+    margin-top: -10px;
+}
+.c-form{
+    width: 80%;
+    margin: 30px auto 70px;
+}
+
+input, textarea{
+    font-family: 'Roboto Slab', sans-serif;
+}
+.input-txt{
+    width: 98%;
+    padding: 7.5px 0px 7.5px 2%;
+    font-size: 13px;
+}
+.c-form textarea{
+    width: 96%;
+    height: 70px;
+    padding: 7.5px 2%;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+.input-btn{
+    width: 101%;
+    font-size: 14px;
+}
+
+
+.footer{
+    min-height: 70px;
+    font-size: 13px;
+}
+}
+
+/*Tablet Potrait*/
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+ .site-logo{
+    height: 45px;
+    width: 45px;
+    margin: 5px auto;
+}
+
+
+.sec-content{
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+.info-sec{
+    height: 60vh;
+    font-size: 15px;
+}
+.info-title{
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+.my-brief{
+    margin-top: 0px;
+    font-size: 25px;
+}
+
+
+.skill-sec{
+    padding-bottom: 50px;
+}
+.skill-item{
+    width: 30%;
+    margin: 100px 3% 0px 1%;
+}
+.skill-image{
+    height: 150px;
+}
+.skill-title{
+    font-size: 18px;
+}
+.skill-desc{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+
+.in-logo{
+    width: 45px;
+    height: 45px;
+    margin: -30px auto 0px auto;
+    padding: 5px;
+}
+
+
+.contact-sec h1{
+    font-size: 26px;
+    margin-top: 20px
+}
+.c-extra{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 16px;
+    margin-top: -10px;
+}
+.c-form{
+    width: 80%;
+    margin: 30px auto 70px;
+}
+
+input, textarea{
+    font-family: 'Roboto Slab', sans-serif;
+}
+.input-txt{
+    width: 98%;
+    padding: 7.5px 0px 7.5px 2%;
+    font-size: 14px;
+}
+.c-form textarea{
+    width: 96%;
+    height: 70px;
+    padding: 7.5px 2%;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.input-btn{
+    width: 101%;
+    font-size: 16px;
+}
+
+
+.footer{
+    min-height: 70px;
+    font-size: 13px;
+}
+}
+
+/*Tablets Landscape*/
+@media screen and (min-width: 1024px) and (max-width: 1279px)
+{
+ .site-logo{
+    height: 40px;
+    width: 40px;
+    margin: 5px auto;
+}
+
+
+.sec-content{
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+.info-sec{
+    height: 100vh;
+    font-size: 15px;
+}
+.info-title{
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+.my-brief{
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+.skill-title{
+    font-size: 18px;
+}
+.skill-desc{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-size: 12px;
+}
+
+
+.in-logo{
+    width: 35px;
+    height: 35px;
+    margin: -28px auto 0px auto;
+    padding: 5px;
+}
+
+
+.contact-sec h1{
+    font-size: 35px;
+    margin-top: 20px
+}
+.c-extra{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 18px;
+    margin-top: -10px;
+}
+.c-form{
+    width: 100%;
+    margin: 30px auto 70px;
+}
+
+input, textarea{
+    font-family: 'Roboto Slab', sans-serif;
+}
+.input-txt{
+    width: 98%;
+    padding: 7.5px 0px 7.5px 2%;
+    font-size: 15px;
+}
+.c-form textarea{
+    width: 96%;
+    height: 70px;
+    padding: 7.5px 2%;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.input-btn{
+    width: 101%;
+    font-size: 16px;
+}
+
+
+.footer{
+    min-height: 70px;
+    font-size: 13px;
+}
+}
