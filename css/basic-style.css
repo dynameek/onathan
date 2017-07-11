@@ -8,6 +8,7 @@ body{
 }
 div{
     float: left;
+    box-sizing: border-box;
     width: 100%;
     height: auto;
     font-family: 'Roboto Slab', sans-serif;
@@ -71,8 +72,8 @@ a{
 .skill-sec{
     width: 25%;
     height: 50vh;
-    background: #008c8c;
-    border-bottom: 1px solid #e0e0e0;
+    background: #9AE2E2;
+    border-bottom: 1px solid #eee;
 }
 .skill-item{
     width: 30%;
@@ -110,45 +111,44 @@ a{
     width: 25%;
     height: 50vh;
     box-sizing: border-box;
-    padding: 10px 20px;
+    padding: 10px 25px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: #FFB744;
+    background: #F7AD5D;
     color: #fff;
 }
 .c-extra{
     font-size: 22px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .c-form{
     margin: 20px auto;
 }
 
 input, textarea{
-    font-family: 'Roboto Slab', sans-serif;
-    box-sizing: border-box;
     width: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', sans-serif;
+    border: 1px solid #eee;
 }
 .input-txt{
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #eee;
     font-size: 16px;
 }
 .c-form textarea{
     height: 100px;
     padding: 10px;
     margin-bottom: 5px;
-    border: 1px solid #80cbc4;
     font-size: 16px;
 }
 .input-btn{
     font-size: 18px;
     margin-top: 10px;
     padding: 12.5px 0px;
-    border: 1px solid #80cbc4;
+    border: none;
     background: #008c8c;
     color: #fff;
 }
