@@ -29,9 +29,9 @@ a{
 }
 
 .site-logo{
-    height: 40px;
-    width: 40px;
-    margin: 10px auto;
+    height: 50px;
+    width: 50px;
+    margin: 20px auto;
 }
 
 
@@ -45,45 +45,38 @@ a{
     justify-content: center;
     align-content: center;
 }
-.sec-title{
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-size: 35px;
-    font-weight: bold;
-    color: #000;
-}
-
 
 .info-sec{
+    width: 75%;
     height: 100vh;
-    background: url('../images/keyboard.jpg');
-    background-size: cover;
     font-size: 15px;
     font-family: 'Lora', sans-serif;
     color: #fff;
 }
 .info-title{
-    font-size: 65px;
+    font-size: 40px;
     font-weight: bold;
-    font-family: 'Berkshire Swash', sans-serif;
+    font-family: 'Roboto slab', sans-serif;
     margin-bottom: 10px;
-    color: #fff;
+    color: #000;
 }
 .my-brief{
     margin-top: 0px;
-    font-size: 36px;
+    font-size: 26px;
     font-family: 'Roboto Slab', sans-serif;
-    color: #80cbc4;
+    color: #666;
 }
 
 
 .skill-sec{
-    background: #eeeeee;
+    width: 25%;
+    height: 50vh;
+    background: #008c8c;
     border-bottom: 1px solid #e0e0e0;
 }
 .skill-item{
     width: 30%;
-    margin: 70px 2.5% 70px 2.5%;
+    margin: 5px;
 }
 .skill-image{
     height: 150px;
@@ -102,70 +95,62 @@ a{
 
 
 .in-logo{
-    width: 40px;
-    height: 40px;
-    margin: -30px auto 0px auto;
-    padding: 5px;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    margin: -40px auto 0px auto;
+    padding: 10px;
     border-radius: 50%;
-    border: 2px solid #fff;
-    background: #e0e0e0;
+    background: #fff;
     clear: both;
 }
 
 
 .contact-sec{
-    min-height: 300px;
+    width: 25%;
+    height: 50vh;
+    box-sizing: border-box;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: #008c8c;
+    background: #FFB744;
+    color: #fff;
 }
 .c-extra{
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
 }
 .c-form{
-    max-width: 400px;
-    margin: 30px auto 70px;
+    margin: 20px auto;
 }
 
 input, textarea{
     font-family: 'Roboto Slab', sans-serif;
+    box-sizing: border-box;
+    width: 100%;
 }
 .input-txt{
-    width: 350px;
-    padding: 7.5px 0px 7.5px 10px;
+    padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #80cbc4;
+    border: 1px solid #eee;
     font-size: 16px;
 }
 .c-form textarea{
-    width: 342px;
     height: 100px;
-    padding: 7.5px 10px;
+    padding: 10px;
     margin-bottom: 5px;
     border: 1px solid #80cbc4;
     font-size: 16px;
 }
 .input-btn{
-    width: 364px;
-    font-size: 16px;
-    padding: 7.5px 0px;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 12.5px 0px;
     border: 1px solid #80cbc4;
     background: #008c8c;
     color: #fff;
-}
-
-
-.footer{
-    min-height: 100px;
-    background: #b9b9b9;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    font-size: 14px;
-    font-family: 'Lora', sans-serif;
-    color: #424242;
 }
 
 
