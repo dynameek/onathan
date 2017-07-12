@@ -72,7 +72,7 @@ a{
 .skill-sec{
     width: 25%;
     height: 50vh;
-    background: #9AE2E2;
+    background: #00C4C4;
     border-bottom: 1px solid #eee;
 }
 .skill-item{
@@ -139,7 +139,7 @@ input, textarea{
     font-size: 16px;
 }
 .c-form textarea{
-    height: 100px;
+    height: 150px;
     padding: 10px;
     margin-bottom: 5px;
     font-size: 16px;
@@ -149,7 +149,7 @@ input, textarea{
     margin-top: 10px;
     padding: 12.5px 0px;
     border: none;
-    background: #008c8c;
+    background: #01AAAA;
     color: #fff;
 }
 
