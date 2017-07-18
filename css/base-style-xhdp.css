@@ -12,19 +12,27 @@ and open the template in the editor.
  *
 */
 header{
+    height: auto;
     box-sizing: border-box;
+    padding: 15px 15%;
+    background: transparent;
 }
 header img{
-    width: 40px;
-    height: 45px;
-    margin: 10px 0px 10px 10%;
+    width: 50px;
+    height: 65px;
+    margin: 0px;
 }
 .contact-btn{
     float: right;
     border: none;
-    height: 65px;
+    height: 50px;
     padding: 0px 25px;
+    margin-top: 5px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
     font-size: 19px;
+    background: transparent;
+    color: #fff;
 }
 .left{
     float: left;
@@ -33,12 +41,20 @@ header img{
     float: right;
 }
 
+.home{
+    height: 70vh;
+    background: url('../media/rail.jpg');
+    text-shadow: 5px 5px 5px #777;
+}
+.home > h1{
+    font-size: 40px;
+}
 /*
  * About Area
 */
 .about{
     height: 100vh;
-    background: url("../media/back2.jpg");
+    background: #E2E2E2;
 }
 .about-content-wrapper{
     align-self: center;

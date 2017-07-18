@@ -23,13 +23,13 @@
             <button class="contact-btn" onclick="myPage.showElement('contact-sec', 20);">CONTACT</button>
         </header>
         <section class="home">
-                <img alt="" src="./media/logo-white-xx.fw.png">
-                <h1>OGUNTUBERU NATHAN</h1>
-                <hr>
-                <h3>WEB DESIGNER. DEVELOPER. WORDSMITH. FOODIE.</h3>
+            <img alt="" src="./media/logo-white-xx.fw.png">
+            <h1>OGUNTUBERU NATHAN</h1>
+            <hr>
+            <h3>WEB DESIGNER. DEVELOPER. WORDSMITH. FOODIE.</h3>
         </section>
         <section class="about">
-            <div class="about-content-wrapper">
+            <!-- <div class="about-content-wrapper">
                 <h1>Full-Stack Web Developer. Creative Thinker. Writer. Artist. Foodie.</h1>
                 <div class="info-holder">
                     <div class="info">
@@ -54,7 +54,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
         <section class="contact" id="contact-sec" onclick="myPage.hideElement('contact-sec', 20);">
             <div class="contact-wrapper" onclick="myPage.doNothing();">
@@ -71,9 +71,9 @@
                 <div onclick="myPage.hideElement('contact-sec', 20);">Close</div>
             </div>
         </section>
-        <footer>
+        <!--<footer>
             <p>&copy; OGUNTUBERU NATHAN 2017.</p>
-        </footer>
+        </footer> -->
     </div>
     <script src="./js/temi.js">
     </script>

@@ -10,7 +10,7 @@ and open the template in the editor.
 
 /**/
 body{
-    background: #008c8c;
+    background: #fff;
 }
 div{
     float: left;
@@ -33,14 +33,14 @@ a{
 /**/
 header{
     width: 100%;
-    max-height: 70px;
+    max-height: 100px;
     position: fixed;
     top: 0px;
     left: 0px;
-    background: #008c8c;
+    background: #FFFFFF;
 }
 header img{
-    width: 30px;
+    width: 25px;
     height: 35px;
     margin: 10px 15px;
 }
@@ -89,16 +89,18 @@ section{
 }
 .home > h1{
     margin: 0px;
-    font-size: 32px;
-    color: #EDEDED;
+    font-size: 35px;
+    color: #FFFFFF;
 }
 .home > hr{
-    width: 10%;
+    width: 5%;
+    border: none;
+    border-top: 5px solid #EAEAEA;
 }
 .home > h3{
     margin: 0px;
     font-size: 19px;
-    color: #EDEDED;
+    color: #FFFFFF;
 }
 
 /**/
