@@ -1,0 +1,31 @@
+/* 
+    Created on : May 27, 2017, 7:48:28 PM
+    Author     : Nathan
+    Function   : Serves styles for screen sizes above 699px
+*/
+
+/*About area*/
+.info-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.info{
+    width: 33%;
+    margin: 20px 15px;
+}
+
+/*Contact area*/
+.contact-wrapper{
+    width: 80%;
+}
+
+@media screen and (min-width: 800px){
+    .contact-wrapper{
+        width: 500px;
+    }
+    .c-form .input-txt{
+        width: 49.25%;
+        padding-left: 10px;
+    }
+}

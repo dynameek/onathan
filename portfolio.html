@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nathan: Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('./css/base-style.css');
+            @import url('./css/grid.css');
+            @import url('./css/base-style-mdp.css') only screen and (min-width: 480px);
+            @import url('./css/base-style-hdp.css') only screen and (min-width: 600px);
+            @import url('./css/base-style-xhdp.css') only screen and (min-width: 1024px);
+        </style>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <header>
+                <img alt="" class="menu-icon" src="./media/menu-ico.fw.png" onclick="myPage.displayMenu();">
+                <nav id="nav-wrap">
+                    <header>
+                        <img  alt="" class="menu-icon" src="./media/menu-ico.fw.png" onclick="myPage.hideMenu();">
+                    </header>
+                    <div class="nav-item" onclick="myPage.gotoSec('home');">HOME</div>
+                    <div class="nav-item" onclick="myPage.gotoSec('about');">ABOUT</div>
+                    <div class="nav-item" onclick="myPage.gotoSec('contact');">CONTACT</div>
+                </nav>
+            </header>
+            </div>
+    </body>
+</html>
