@@ -4,28 +4,122 @@
     Function   : Serves styles for screen sizes above 699px
 */
 
-/*About area*/
-.info-holder{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+/*
+ *  SKILL SECTION
+*/
+#skill-sec{
+    padding: 50px 70px;
+    background: #fefefe;
 }
-.info{
-    width: 33%;
-    margin: 20px 15px;
+.skill-item:last-child{
+    margin-bottom: 0px;
+}
+.skill-item{
+    margin-bottom: 10px;
+}
+.skill-item > div{
+    width: 50px;
+    height: 50px;
+}
+.skill-item > h3{
+    font-size: 22px;
+    color: #FF8D0C;
+}
+.skill-item > p{
+    width: 85%;
+    margin-left: 65px;
+    font-size: 16px;
 }
 
-/*Contact area*/
-.contact-wrapper{
-    width: 80%;
+
+/*
+ *  FOOTER SECTION
+ *
+ */
+footer > h3{
+    margin: 15px 0px;
+    text-shadow: 0px 0px 0.5px #bbb;
+}
+footer > button{
+    width: 40%;
 }
 
 @media screen and (min-width: 800px){
-    .contact-wrapper{
-        width: 500px;
-    }
-    .c-form .input-txt{
-        width: 49.25%;
-        padding-left: 10px;
-    }
+   
+/*
+ *  SKILL SECTION
+*/
+#skill-sec{
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.skill-item{
+    width: 23%;
+    margin-bottom: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.skill-item > div{
+    width: 100px;
+    height: 100px;
+    border-width: 3.5px;
+    margin: 0%;
+    margin-bottom: 20px;
+    align-self: center;
+}
+.skill-item > h3{
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.skill-item > p{
+    width: 100%;
+    margin: 0px;
+    font-size: 14px;
+}
+}
+
+@media screen and (min-width: 1000px){
+   
+/*
+ *  SKILL SECTION
+*/
+#skill-sec{
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.skill-item{
+    width: 23%;
+    margin-bottom: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.skill-item > div{
+    width: 100px;
+    height: 100px;
+    border-width: 3.5px;
+    margin: 0%;
+    margin-bottom: 20px;
+    align-self: center;
+}
+.skill-item > h3{
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.skill-item > p{
+    width: 100%;
+    margin: 0px;
+    font-size: 15px;
+}
 }

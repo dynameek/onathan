@@ -10,72 +10,76 @@
     <style>
         @import url('./css/base-style.css');
         @import url('./css/grid.css');
-        @import url('./css/base-style-mdp.css') only screen and (min-width: 480px);
-        @import url('./css/base-style-hdp.css') only screen and (min-width: 700px);
-        @import url('./css/base-style-xhdp.css') only screen and (min-width: 1024px);
+        @import url('./css/base-style-mdp.css') screen and (min-width: 420px);
+        @import url('./css/base-style-hdp.css') screen and (min-width: 700px);
+        @import url('./css/base-style-xhdp.css') screen and (min-width: 1425px);
     </style>
+    <link href="https://fonts.googleapis.com/css?family=Prata|Handlee" rel="stylesheet">
+    <script src="./js/temi.js"></script>
 </head>
 
 <body>
     <div class="page-wrapper">
         <header>
-            <img alt="" class="site-icon" src="./media/logo-white-xx.fw.png" onclick="myPage.displayMenu();">
-            <button class="contact-btn" onclick="myPage.showElement('contact-sec', 20);">CONTACT</button>
+            <img alt="" class="site-icon" src="./media/logo-xx.fw.png" onclick="myPage.displayMenu();">
+            <button class="right" onclick="myPage.showElement('contact-sec', 20);">CONTACT</button>
         </header>
-        <section class="home">
-            <img alt="" src="./media/logo-white-xx.fw.png">
-            <h1>OGUNTUBERU NATHAN</h1>
-            <hr>
-            <h3>WEB DESIGNER. DEVELOPER. WORDSMITH. FOODIE.</h3>
-        </section>
-        <section class="about">
-            <!-- <div class="about-content-wrapper">
-                <h1>Full-Stack Web Developer. Creative Thinker. Writer. Artist. Foodie.</h1>
-                <div class="info-holder">
-                    <div class="info">
-                        <img alt=" " src="./media/front-end-xx.fw.png">
-                        <p>
-                            I am able to create beautiful, clean and engaging web site user interfaces
-                            with great user experience using HTML, CSS, Javascript and a few powerful libraries.
-                        </p>
-                    </div>
-                    <div class="info">
-                        <img alt=" " src="./media/back-end-xx.fw.png">
-                        <p>
-                            Server side logic, data storage and manipulation are no problem for me. I
-                            script in PHP and store in MySQL - giving your web applications more power. 
-                        </p>
-                    </div>
-                    <div class="info">
-                        <img alt=" " src="./media/responsive-xx.fw.png">
-                        <p>
-                            In today's world, building web applications to support a wide range of devices
-                            is critical to staying relevant. I deliver on that as easily as I sip water - yes, a sip.
-                        </p>
-                    </div>
-                </div>
-            </div> -->
-        </section>
-        <section class="contact" id="contact-sec" onclick="myPage.hideElement('contact-sec', 20);">
-            <div class="contact-wrapper" onclick="myPage.doNothing();">
-                <h3>Need help with your project? Send me a message.</h3>
-                <div class="c-form">
-                    <form name="c_form" method="post" action="">
-                        <input name="c_name" class="input-txt left" type="text" placeholder="Fullname"/>
-                        <input name="c_mail" class="input-txt right" type="email" placeholder="Email Address"/>
-                        <input name="c_sub" type="text" placeholder="Subject"/>
-                        <textarea name="c_body" placeholder="Your Message"></textarea>
-                        <input name="c_btn" class="input-btn" type="submit" value="Send Message"/>
-                    </form>
-                </div>
-                <div onclick="myPage.hideElement('contact-sec', 20);">Close</div>
+        <section id="home-sec">
+            <div  class="col-flex" id="veil">
+                <img alt="My Logo" src="./media/logo-white-xx.fw.png">
+                <h1>Oguntuberu Nathan</h1>
+                <hr>
+                <h3>Web Designer. Developer. Wordsmith. Foodie.</h3>
+                <!--<p>
+                    I am a junior full stack web developer, creative mind, Linux enthusiast and foodie
+                    based in Nigeria. I ably create simple yet beautiful and attractive websites.
+                    I love solving problems, drinking coffee and Game of thrones.<br>
+                    I can <b>git</b> with teams and I'm always ready to learn. Right here, you have the right man.
+                    <br>Valar Morghulis.
+                </p-->
             </div>
         </section>
-        <!--<footer>
-            <p>&copy; OGUNTUBERU NATHAN 2017.</p>
-        </footer> -->
+        <section class="col-flex" id="about-sec">
+            <h1>Be Top Class. Stand Out</h1>
+            <ul id="tech">
+                <li>AngularJS</li>
+                <li>CSS</li>
+                <li>Git</li>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>MySQL</li>
+                <li>PHP</li>
+                <li>Problem Solving</li>
+                <li>WordPress</li>
+            </ul>
+        </section>
+        <section class="col-flex" id="skill-sec">
+            <div class="skill-item">
+                <div></div>
+                <h3>Web Design</h3>
+                <p>Let your content determine the design, keeping it clean, beautiful and appealing.</p>
+            </div>
+            <div class="skill-item">
+                <div></div>
+                <h3>Responsive Design</h3>
+                <p>A responsive site is most desirable. Let's make your site fit a wide range of devices.</p>
+            </div>
+            <div class="skill-item">
+                <div></div>
+                <h3>Backend Logic</h3>
+                <p>Give your sites and apps more power with logic and dynamism, without breaking them.</p>
+            </div>
+            <div class="skill-item">
+                <div></div>
+                <h3>Database Design</h3>
+                <p>Add more power to your apps with optimized databases. I design and implement in MySQL.</p>
+            </div>
+        </section>
+        <footer>
+            <h3>Do feel free to leave me a message.</h3>
+            <button>Send Message</button>
+        </footer>
     </div>
-    <script src="./js/temi.js">
-    </script>
 </body>
 </html>

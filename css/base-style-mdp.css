@@ -8,12 +8,12 @@ and open the template in the editor.
     Author     : Nathan
 */
 
-/**/
-.about-content-wrapper{
-    padding: 20px 50px;
+/*
+ *  Header
+*/
+header{
+    padding: 10px 25px 5px 25px;
 }
-
-/**/
-.contact-wrapper{
-    width: 90%;
+#about-sec, #skill-sec{
+    padding: 30px 25px;
 }
