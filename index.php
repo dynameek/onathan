@@ -10,8 +10,8 @@
     <style>
         @import url('./css/base-style.css');
         @import url('./css/grid.css');
-        @import url('./css/base-style-mdp.css') screen and (min-width: 420px);
-        @import url('./css/base-style-hdp.css') screen and (min-width: 700px);
+        /*@import url('./css/base-style-mdp.css') screen and (min-width: 420px);
+        @import url('./css/base-style-hdp.css') screen and (min-width: 700px);*/
         @import url('./css/base-style-xhdp.css') screen and (min-width: 1425px);
     </style>
     <link href="https://fonts.googleapis.com/css?family=Prata|Handlee" rel="stylesheet">
@@ -40,7 +40,7 @@
             </div>
         </section>
         <section class="col-flex" id="about-sec">
-            <h1>Be Top Class. Stand Out</h1>
+            <h1>Be Beautiful. Stand Out. Soar</h1>
             <ul id="tech">
                 <li>AngularJS</li>
                 <li>CSS</li>
@@ -57,17 +57,13 @@
         <section class="col-flex" id="skill-sec">
             <div class="skill-item">
                 <div></div>
-                <h3>Web Design</h3>
-                <p>Let your content determine the design, keeping it clean, beautiful and appealing.</p>
+                <h3>Responsive Web Design</h3>
+                <p>Let your content determine the design, keeping it clean, beautiful and appealing.
+                A responsive site is most desirable. Let's make your site fit a wide range of devices.</p>
             </div>
             <div class="skill-item">
                 <div></div>
-                <h3>Responsive Design</h3>
-                <p>A responsive site is most desirable. Let's make your site fit a wide range of devices.</p>
-            </div>
-            <div class="skill-item">
-                <div></div>
-                <h3>Backend Logic</h3>
+                <h3>Backend Development</h3>
                 <p>Give your sites and apps more power with logic and dynamism, without breaking them.</p>
             </div>
             <div class="skill-item">
@@ -78,7 +74,6 @@
         </section>
         <footer>
             <h3>Do feel free to leave me a message.</h3>
-            <button>Send Message</button>
         </footer>
     </div>
 </body>

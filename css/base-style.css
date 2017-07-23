@@ -73,7 +73,7 @@ header{
     left: 0px;
     width: 100%;
     padding: 10px 15px 5px 15px;
-    background: rgba(245, 255, 245, 0.1);
+    background: rgba(245, 255, 245, 0.0);
 }
 header > img{
     width: 35px;
@@ -94,7 +94,7 @@ header > button{
  *
  */
 #home-sec{
-    height: 78vh;
+    height: 80.5vh;
     padding: 0px;
     background: url('../media/rail.jpg');
     background-position: center;
@@ -138,15 +138,13 @@ header > button{
 #about-sec{
     padding: 30px 15px;
     text-align: center;
-    background: #8FC1C1;
+    background: #fcfcfc;
 }
 
 #about-sec > h1{
     font-family: 'Prata', sans-serif;
     font-size: 27px;
-    margin-bottom: 15px;
-    color: #fff;
-    text-shadow: 0px 0px 2.5px #424141;
+    color: #FF8D0C;
 }
 #tech{
     padding: 0px;
@@ -157,13 +155,11 @@ header > button{
     width: auto;
     padding: 4px 10px;
     margin: 2.5px 1.5px;
-    border: 1.5px solid #fff;
+    border: 2px solid #008c8c;
     border-radius: 3.5px;
-    box-shadow: 0px 0px 1.5px #444;
     font-weight: bold;
     font-size: 14px;
-    text-shadow: 0px 0px 0.5px #444;
-    color: #FFF;
+    color: #008c8c;
 }
 
 /*
@@ -171,8 +167,8 @@ header > button{
  *
  */
 #skill-sec{
-    padding: 30px 15px;
-    background: #fefefe;
+    padding: 20px 15px;
+    background: #fcfcfc;
 }
 .skill-item:last-child{
     margin-bottom: 0px;
@@ -207,21 +203,29 @@ header > button{
  *  FOOTER
 */
 footer{
+    box-sizing: border-box;
     width: 100%;
-    background: #FFFF38;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    padding: 50px 15%;
+    align-content: center;
+    padding: 25px 15px;
+    text-align: center;
+    background: #008c8c;
+    color: #fff;
 }
 footer > h3{
     font-size: 24px;
     margin-bottom: 20px;
 }
 footer > button{
-    width: 50%;
+    align-self: center;
+    width: 80%;
     padding: 10px 50px;
-    border-width: 4px;
+    border: 4px solid #fff;
+    border-radius: 25px;
     font-weight: bolder;
     font-size: 18px;
+    background: transparent;
+    color: #fff;
 }
