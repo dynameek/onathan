@@ -20,7 +20,7 @@
 
 <body>
     <div class="page-wrapper">
-        <header>
+        <header id="header">
             <img alt="" class="site-icon" src="./media/logo-xx.fw.png" onclick="myPage.displayMenu();">
             <button class="right" onclick="myPage.showElement('contact-sec', 20);">CONTACT</button>
         </header>

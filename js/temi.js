@@ -1,5 +1,8 @@
 var temi = {
     docIsReady: false, //   Tell when the document is ready
+    isScrollUp: false,
+    prevScrollPosition: 0,
+    headerIsDisplayed: false,
     
     /*
      *  Methods
@@ -54,6 +57,17 @@ var temi = {
         */
         element.style.fontColor = color;
     },
+    checkScrollDirection: function(){
+        var currScrollPosition = document.body.scrollTop;
+        var scrollDiff = this.prevScrollPosition - currScrollPosition;
+        if(scrollDiff > 0){
+            this.isScrollUp = false;
+        }else{
+            this.isScrollUp = true;
+        }
+        //
+        this.prevScrollPosition = currScrollPosition;
+    },
     fadeIn: function(element, duration){
         /*
          *  This function fades in an element
@@ -91,3 +105,62 @@ var temi = {
         }, step);
     },
 };
+
+    /*
+     *  WORKER METHODS
+     *  Serve as interface
+    */
+    
+    displayHeader: function(element){
+        if(!this.headerIsDisplayed){
+            //  get contact button
+            var contact_btn = element.children[1];
+            
+            //  change button Fontcolor and borderColor
+            this.changeBorderColor(contact_btn, "#008C8C");
+            this.changeFontColor(contact_btn, "#008C8C");
+            this.changeBackgroundColor(element, "#ffffff");
+            
+            // fade in header
+            this.fadeIn(element, 500);
+            
+            //signify that header is displayed
+            this.headerIsDisplayed = true;
+        }
+    },
+    hideHeader: function(element){
+        //  check if header is displayed
+        if(this.headerIsDisplayed){
+            //  get contact button
+            var contact_btn = element.children[1];
+            
+            //  change button Fontcolor and borderColor
+            this.changeBorderColor(contact_btn, "#FFFFFF");
+            this.changeFontColor(contact_btn, "#FFFFFF");
+            
+            // fade in header
+            this.fadeOut(element, 500);
+        
+            //signify that header is displayed
+            this.headerIsDisplayed = false;
+        }
+    },
+};
+
+/*
+ *  Works
+*/
+//var header = document.getElementById("header");
+//var contact_btn = header.children[1];
+window.addEventListener('scroll', function(){
+    var header = document.getElementById("header");
+    temi.checkScrollDirection();
+    if(temi.isScrollUp){
+        //page moves up
+        temi.hideHeader(header);
+    }else{
+        //page moves down
+        temi.displayHeader(header);
+    }
+});
+
