@@ -3,6 +3,8 @@ var temi = {
     isScrollUp: false,
     prevScrollPosition: 0,
     headerIsDisplayed: false,
+    isPageScrollDownHandled: false,
+    isPageScrollUpHandled: false,
     
     /*
      *  Methods
@@ -61,9 +63,9 @@ var temi = {
         var currScrollPosition = document.body.scrollTop;
         var scrollDiff = this.prevScrollPosition - currScrollPosition;
         if(scrollDiff > 0){
-            this.isScrollUp = false;
-        }else{
             this.isScrollUp = true;
+        }else{
+            this.isScrollUp = false;
         }
         //
         this.prevScrollPosition = currScrollPosition;
@@ -104,8 +106,55 @@ var temi = {
             }
         }, step);
     },
-};
-
+    handleScrollDown: function(){
+        this.isPageScrollDownHandled = true;
+        this.isPageScrollUpHandled = false;
+    },
+    handleScrollUp: function(){
+        this.isPageScrollDownHandled = false;
+        this.isPageScrollUpHandled = true;
+    },
+    slideDown: function(element, from, to, step){
+        /*
+         *  This function moves an element from a more negative number to a more positive one
+         *  It takes four parameters:
+         *  1. element (DOM Object) - Element to be moved
+         *  2. from (Integer) - Position to leave
+         *  3. to (Integer) - Destination position
+         *  4. step (Integer) - number of pixels to move
+         *
+        */
+        element.style.backgroundColor = "white";
+        var slide = setInterval(function(){
+            if(from < to){
+                from += step;
+                element.style.top = from+"px";
+            }else{
+                clearInterval(slide);
+            }
+        }, 25);
+    },
+    slideUp: function(element, from, to, step){
+        /*
+         *  This function moves an element from a more positive number to a more negative one
+         *  It takes four parameters:
+         *  1. element (DOM Object) - Element to be moved
+         *  2. from (Integer) - Position to leave
+         *  3. to (Integer) - Destination position
+         *  4. step (Integer) - number of pixels to move
+         *
+        */
+        element.style.backgroundColor = "white";
+        var slide = setInterval(function(){
+            if(from > to){
+                from -= step;
+                element.style.top = from+"px";
+            }else{
+                clearInterval(slide);
+            }
+        }, 25);
+    },
+    
     /*
      *  WORKER METHODS
      *  Serve as interface
@@ -153,14 +202,18 @@ var temi = {
 //var header = document.getElementById("header");
 //var contact_btn = header.children[1];
 window.addEventListener('scroll', function(){
+    console.log(document.body.scrollTop);
     var header = document.getElementById("header");
     temi.checkScrollDirection();
-    if(temi.isScrollUp){
+    if(temi.isScrollUp && (!temi.isPageScrollUpHandled)){
         //page moves up
-        temi.hideHeader(header);
-    }else{
+        temi.handleScrollUp();
+        temi.slideDown(header, (-70), 0, 5);
+    }
+    if((!temi.isScrollUp) && (!temi.isPageScrollDownHandled)){
         //page moves down
-        temi.displayHeader(header);
+        temi.handleScrollDown();
+        temi.slideUp(header, (0), (-70), 5);
     }
 });
 
