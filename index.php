@@ -14,7 +14,7 @@
         @import url('./css/base-style-hdp.css') screen and (min-width: 700px);*/
         @import url('./css/base-style-xhdp.css') screen and (min-width: 1425px);
     </style>
-    <link href="https://fonts.googleapis.com/css?family=Prata|Handlee" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Prata|Handlee" rel="stylesheet">-->
     <script src="./js/temi.js"></script>
 </head>
 
