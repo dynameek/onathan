@@ -81,12 +81,13 @@ header > img{
 header > button{
     box-sizing: border-box;
     padding: 10px;
-    border: 2px solid #008c8c;
-    border-radius: 10px;
     margin-top: 5px;
+    border-radius: 10px;
+    border: 2px solid;
     font-weight: bold;
     background: transparent;
-    color: #008c8c;
+    color: #fff;
+    border-color: #fff;
 }
 
 /*
