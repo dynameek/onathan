@@ -10,11 +10,11 @@
     <style>
         @import url('./css/base-style.css');
         @import url('./css/grid.css');
-        /*@import url('./css/base-style-mdp.css') screen and (min-width: 420px);
-        @import url('./css/base-style-hdp.css') screen and (min-width: 700px);*/
+        @import url('./css/base-style-mdp.css') screen and (min-width: 420px);
+        @import url('./css/base-style-hdp.css') screen and (min-width: 1000px);
         @import url('./css/base-style-xhdp.css') screen and (min-width: 1425px);
     </style>
-    <!--<link href="https://fonts.googleapis.com/css?family=Prata|Handlee" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Prata|Handlee" rel="stylesheet">
     <script src="./js/temi.js"></script>
 </head>
 
@@ -22,14 +22,14 @@
     <div class="page-wrapper">
         <header id="header">
             <img alt="" class="site-icon" src="./media/logo-xx.fw.png" onclick="myPage.displayMenu();">
-            <button class="right" onclick="myPage.showElement('contact-sec', 20);">CONTACT</button>
+            <button class="right" onclick="temi.contactMe();">CONTACT</button>
         </header>
         <section id="home-sec">
             <div  class="col-flex" id="veil">
-                <img alt="My Logo" src="./media/logo-white-xx.fw.png">
-                <h1>Oguntuberu Nathan</h1>
-                <hr>
-                <h3>Web Designer. Developer. Wordsmith. Foodie.</h3>
+                <img alt="My Logo" src="./media/logo-white-xx.fw.png" id="body-icon">
+                <h1><span id="my_name"></span><span id="cursor"></span></h1>
+                <hr id="hr">
+                <h3 id="slogan">Web Designer. Developer. Wordsmith. Foodie.</h3>
                 <!--<p>
                     I am a junior full stack web developer, creative mind, Linux enthusiast and foodie
                     based in Nigeria. I ably create simple yet beautiful and attractive websites.
@@ -40,7 +40,7 @@
             </div>
         </section>
         <section class="col-flex" id="about-sec">
-            <h1>Be Beautiful. Stand Out. Soar</h1>
+            <h1>Let Your Content Dictate The Design.</h1>
             <ul id="tech">
                 <li>AngularJS</li>
                 <li>CSS</li>
@@ -57,23 +57,36 @@
         <section class="col-flex" id="skill-sec">
             <div class="skill-item">
                 <div></div>
-                <h3>Responsive Web Design</h3>
-                <p>Let your content determine the design, keeping it clean, beautiful and appealing.
-                A responsive site is most desirable. Let's make your site fit a wide range of devices.</p>
+                <h3>Frontend Design</h3>
+                <p>
+                    With  guidance from your content and imaginations as welll as great attention to detail,
+                    I create simple, beautiful and visually appealing web designs.
+                    I also add an optimal dose of responsiveness to ensure your that
+                    you reach your target users irrespective of the device they use.
+                </p>
             </div>
             <div class="skill-item">
                 <div></div>
                 <h3>Backend Development</h3>
-                <p>Give your sites and apps more power with logic and dynamism, without breaking them.</p>
+                <p>
+                    Adding Logic and dynamism to your web application translates to more power and usefulness.
+                    With top skill in PHP scripting and database design and implementation, I give your application the power it needs
+                    to satisfy your end users.<br> Be it a simple or complex application.
+                </p>
             </div>
             <div class="skill-item">
                 <div></div>
-                <h3>Database Design</h3>
-                <p>Add more power to your apps with optimized databases. I design and implement in MySQL.</p>
+                <h3>Post-work Support</h3>
+                <p>
+                    The world we live in is a pragmatic one and unforseen complications may arise at anytime.
+                    I also understand that support is critical to successful projects. For this reason,
+                    I am always available to provide help and a learned voice when needed. <br/>I am always a mail away.
+                </p>
             </div>
         </section>
         <footer>
-            <h3>Do feel free to leave me a message.</h3>
+            <h1>"Every Hire Is A Gamble"</h1>
+            <h3>- Donald J. Trump</h3>
         </footer>
     </div>
 </body>

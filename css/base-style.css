@@ -69,11 +69,11 @@ img{
 header{
     box-sizing: border-box;
     position: fixed;
-    top: 0px;
+    top: -150px;
     left: 0px;
     width: 100%;
     padding: 10px 15px 5px 15px;
-    background: rgba(245, 255, 245, 0.0);
+    background: rgb(255, 255, 255);
 }
 header > img{
     width: 35px;
@@ -86,8 +86,8 @@ header > button{
     border: 2px solid;
     font-weight: bold;
     background: transparent;
-    color: #fff;
-    border-color: #fff;
+    color: #008c8c;
+    border-color: #008c8c;
 }
 
 /*
@@ -95,9 +95,10 @@ header > button{
  *
  */
 #home-sec{
-    height: 80.5vh;
+    height: 100vh;
     padding: 0px;
     background: url('../media/rail.jpg');
+    background-size: cover;
     background-position: center;
     text-align: center;
     color: #fff;
@@ -112,21 +113,26 @@ header > button{
     width: 50px;
     height: 60px;
     margin-bottom: 15px;
-    margin-top: 70px;
     align-self: center;
+    opacity: 0;
 }
 #veil > h1{
     font-family: 'Prata', sans-serif;
     font-size: 32px;
+    letter-spacing: 1px;
 }
 #veil > hr{
     width: 10%;
     border-color: #fff;
+    border-style: solid;
     margin: 0px auto 10px auto;
+    opacity: 0;
 }
 #veil> h3{
     font-family: 'Handlee', sans-serif;
     font-size: 19px;
+    color: #fefefe;
+    opacity: 0;
 }
 #veil > p{
     font-size: 16px;
@@ -139,16 +145,18 @@ header > button{
 #about-sec{
     padding: 30px 15px;
     text-align: center;
-    background: #fcfcfc;
+    background: #35B2B2;
 }
 
 #about-sec > h1{
     font-family: 'Prata', sans-serif;
-    font-size: 27px;
-    color: #FF8D0C;
+    font-size: 23px;
+    color: #fff;
+    opacity: 0;
 }
 #tech{
     padding: 0px;
+    color: #fff;
 }
 #tech > li{
     display: inline-block;
@@ -159,8 +167,10 @@ header > button{
     border: 2px solid #008c8c;
     border-radius: 3.5px;
     font-weight: bold;
-    font-size: 14px;
-    color: #008c8c;
+    font-size: 13px;
+    color: #fff;
+    border-color: #fff;
+    opacity: 0;
 }
 
 /*
@@ -168,14 +178,15 @@ header > button{
  *
  */
 #skill-sec{
-    padding: 20px 15px;
-    background: #fcfcfc;
+    padding: 50px 15px;
+    background: #FFFFFF;
 }
 .skill-item:last-child{
     margin-bottom: 0px;
 }
 .skill-item{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
 }
 .skill-item > div{
     width: 35px;
@@ -188,11 +199,11 @@ header > button{
     width: auto;
     margin-left: 15px;
     text-shadow: 0px 0px 0.5px #ccc;
-    color: #FF8D0C;
+    color: #008c8c;
 }
 .skill-item > p{
     width: 80%;
-    margin-top: 3.5px;
+    margin-top: 10px;
     margin-left: 50px;
     font-size: 14px;
     line-height: 1.5;
@@ -210,13 +221,14 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 25px 15px;
+    padding: 50px 15px;
     text-align: center;
-    background: #008c8c;
+    background: #C18E45;
     color: #fff;
 }
-footer > h3{
+footer > h1{
     font-size: 24px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 footer > button{
@@ -229,4 +241,39 @@ footer > button{
     font-size: 18px;
     background: transparent;
     color: #fff;
+}
+
+@media screen and (min-width: 319px){
+    #veil > h1{
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 359px){
+    #veil > h1{
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    #about-sec{
+        padding-bottom: 10px;
+    }
+    #about-sec > h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 400px){
+    #veil > h1{
+        font-size: 33px;
+        margin-bottom: 5px;
+    }
+    #veil > h3{
+        font-size: 22px;
+    }
+    #about-sec{
+        padding-bottom: 10px;
+    }
+    #about-sec > h1{
+    font-size: 30px;
+    margin-bottom: 10px;
 }

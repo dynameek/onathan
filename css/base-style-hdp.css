@@ -5,31 +5,60 @@
 */
 
 /*
- *  SKILL SECTION
+ *  ABOUT SECTION
 */
-#skill-sec{
-    padding: 50px 70px;
+#about-sec{
+    padding: 35px 15px;
 }
-.skill-item:last-child{
-    margin-bottom: 0px;
-}
-.skill-item{
-    margin-bottom: 10px;
-}
-.skill-item > div{
-    width: 50px;
-    height: 50px;
-}
-.skill-item > h3{
-    font-size: 22px;
-    color: #FF8D0C;
-}
-.skill-item > p{
-    width: 85%;
-    margin-left: 65px;
-    font-size: 16px;
+#about-sec > h1{
+    font-size: 35px;
+    margin-bottom: 20px;
 }
 
+/*
+ *  SKILL SECTION
+*/
+
+#skill-sec{
+    height: auto;
+    padding: 100px 15px 50px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.skill-item{
+    width: 32.5%;
+    height: 300px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px;
+    background: #E8F4F4;
+}
+.skill-item > div{
+    float: none;
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+    border-width: 2px;
+    border-color: #E8F4F4;
+    margin-bottom: 30px;
+    margin-top: -70px;
+    background: #fff;
+}
+.skill-item > h3{
+    width: 100%;
+    margin: 0px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+.skill-item > p{
+    width: 100%;
+    margin: 0px;
+    font-size: 15px;
+}
 
 /*
  *  FOOTER SECTION
@@ -37,88 +66,7 @@
  */
 footer > h3{
     margin: 15px 0px;
-    text-shadow: 0px 0px 0.5px #bbb;
 }
 footer > button{
     width: 40%;
-}
-
-@media screen and (min-width: 800px){
-   
-    /*
-     *  SKILL SECTION
-    */
-    #skill-sec{
-        padding: 50px 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-content: space-around;
-    }
-    .skill-item{
-        width: 23%;
-        margin-bottom: 0px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-    .skill-item > div{
-        width: 100px;
-        height: 100px;
-        border-width: 3.5px;
-        margin: 0%;
-        margin-bottom: 20px;
-        align-self: center;
-    }
-    .skill-item > h3{
-        width: 100%;
-        margin: 0px;
-        margin-bottom: 10px;
-        font-size: 17px;
-    }
-    .skill-item > p{
-        width: 100%;
-        margin: 0px;
-        font-size: 14px;
-    }
-}
-
-@media screen and (min-width: 1000px){
-   
-    /*
-     *  SKILL SECTION
-    */
-    #skill-sec{
-        padding: 50px 15px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-content: space-around;
-    }
-    .skill-item{
-        width: 23%;
-        margin-bottom: 0px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-    .skill-item > div{
-        width: 100px;
-        height: 100px;
-        border-width: 3.5px;
-        margin: 0%;
-        margin-bottom: 20px;
-        align-self: center;
-    }
-    .skill-item > h3{
-        width: 100%;
-        margin: 0px;
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
-    .skill-item > p{
-        width: 100%;
-        margin: 0px;
-        font-size: 15px;
-    }
 }

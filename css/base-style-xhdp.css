@@ -17,7 +17,7 @@ and open the template in the editor.
  *  HEADER
 */
 header{
-    padding: 15px 15%;
+    padding: 15px 50px;
 }
 header > img{
     width: 50px;
@@ -37,13 +37,16 @@ header > button{
 #veil > img{
     width: 60px;
     height: 70px;
-    margin-top: 150px;
 }
 #veil > h1{
     font-size: 50px;
 }
+#veil > hr{
+    border-width: 3px;
+    margin: 5px auto 10px auto;
+}
 #veil > h3{
-    font-size: 25px;
+    font-size: 28px;
 }
 
 /*
@@ -51,17 +54,13 @@ header > button{
 */
 #about-sec{
     padding: 30px 15%;
-    background: #008c8c;
 }
 #about-sec > h1{
     font-size: 35px;
     margin-bottom: 15px;
-    color: #fff;
 }
 #tech > li{
     font-size: 16px;
-    color: #fff;
-    border-color: #fff;
 }
 
 
@@ -70,22 +69,20 @@ header > button{
 */
 #skill-sec{
     height: auto;
-    padding: 100px 20% 70px 20%;
+    padding: 100px 10% 70px 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
-    background: #BADBDB;
 }
 .skill-item{
-    width: 32%;
-    height: 350px;
-    text-align: center;
-    /**/
     box-sizing: border-box;
+    width: 32%;
+    height: 400px;
+    text-align: center;
     border-radius: 5px;
     padding: 20px;
-    background: #fff;
+    background: #E8F4F4;
 }
 .skill-item > div{
     float: none;
@@ -93,7 +90,7 @@ header > button{
     height: 150px;
     margin: 0px auto;
     border-width: 2px;
-    border-color: #BADBDB;
+    border-color: #E8F4F4;
     margin-bottom: 30px;
     margin-top: -70px;
     background: #fff;
@@ -104,7 +101,6 @@ header > button{
     margin-left: 0px;
     margin-bottom: 5px;
     font-size: 22px;
-    color: #008c8c;
 }
 .skill-item > p{
     width: 100%;
@@ -115,14 +111,11 @@ header > button{
  *  FOOTER
 */
 footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     padding: 25px 15%;
-    background: #4E5B5B;
 }
-footer > h3{
-    font-size: 24px;
+footer > h1{
+    font-size: 35px;
+    margin-top: 20px;
     margin-bottom: 0px;
 }
 footer > button{

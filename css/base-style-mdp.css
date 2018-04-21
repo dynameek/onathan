@@ -14,6 +14,33 @@ and open the template in the editor.
 header{
     padding: 10px 25px 5px 25px;
 }
-#about-sec, #skill-sec{
+#about-sec{
     padding: 30px 25px;
+}
+#skill-sec{
+    padding: 50px 25px;
+}
+
+@media screen and (min-width: 700px){
+    #about-sec, #skill-sec{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    #veil > img{
+        width: 70px;
+        height: 90px;
+    }
+    #veil > h1{
+        font-size: 45px;
+    }
+    #veil > h3{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    #about-sec, #skill-sec{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
 }
